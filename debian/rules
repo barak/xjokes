@@ -31,19 +31,19 @@ binary-arch:	checkroot build
 	install -d debian/tmp
 	cd debian/tmp && install -d `cat ../dirs`
 	#make install DESTDIR=`pwd`/debian/tmp
-	cp -a yasiti blackhole mori1 mori2 `pwd`/debian/tmp/usr/X11R6/bin
-	ln -s ../../../man/man7/undocumented.7.gz \
-		`pwd`/debian/tmp/usr/X11R6/man/man1/yasiti.1.gz
-	ln -s ../../../man/man7/undocumented.7.gz \
-		`pwd`/debian/tmp/usr/X11R6/man/man1/blackhole.1.gz
-	ln -s ../../../man/man7/undocumented.7.gz \
-		`pwd`/debian/tmp/usr/X11R6/man/man1/mori1.1.gz
-	ln -s ../../../man/man7/undocumented.7.gz \
-		`pwd`/debian/tmp/usr/X11R6/man/man1/mori2.1.gz
+	cp -a yasiti blackhole mori1 mori2 `pwd`/debian/tmp/usr/bin
+	ln -s ../man7/undocumented.7.gz \
+		`pwd`/debian/tmp/usr/share/man/man1/yasiti.1.gz
+	ln -s ../man7/undocumented.7.gz \
+		`pwd`/debian/tmp/usr/share/man/man1/blackhole.1.gz
+	ln -s ../man7/undocumented.7.gz \
+		`pwd`/debian/tmp/usr/share/man/man1/mori1.1.gz
+	ln -s ../man7/undocumented.7.gz \
+		`pwd`/debian/tmp/usr/share/man/man1/mori2.1.gz
 # Must have debmake installed for this to work. Otherwise please copy
 # /usr/bin/debstd into the debian directory and change debstd to debian/debstd
 	debstd README 
-	dpkg-gencontrol
+	dpkg-gencontrol -isp
 	chown -R root.root debian/tmp
 	chmod -R go=rX debian/tmp
 	dpkg --build debian/tmp ..

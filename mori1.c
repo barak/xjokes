@@ -106,7 +106,7 @@ do_all()
 	
     gcvals.foreground = BlackPixel(dpy, screen);
     gcvals.background = WhitePixel(dpy, screen);
-    gcvals.function = GXset;
+    gcvals.function = GXcopy;
     gcvals.fill_style = FillStippled;
     for( i = 0; i < 2; i++){
 	mori[i] = XCreateBitmapFromData(dpy, win, bit[i],

@@ -1,3 +1,18 @@
+xjokes (1.0-7) unstable; urgency=low
+
+  * Really modified for Policy 3.2.1.0 (Oops, I must read it more carefully...)
+    Thanks Watson. (closes: Bug#82784, Bug#82786)
+
+ -- Kenshi Muto <kmuto@debian.org>  Fri, 19 Jan 2001 19:46:36 +0900
+
+xjokes (1.0-6) unstable; urgency=low
+
+  * Applied TrueColor patch. Thanks Bill. (closes: Bug#81925)
+  * Compiled with glibc 2.2 and X 4.0.
+  * Modified for Policy 3.2.1.0.
+
+ -- Kenshi Muto <kmuto@debian.org>  Tue, 16 Jan 2001 21:51:02 +0900
+
 xjokes (1.0-5) unstable; urgency=low
 
   * Fixed source missing.

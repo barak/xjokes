@@ -2,11 +2,11 @@ Source: xjokes
 Section: x11
 Priority: optional
 Maintainer: Kenshi Muto <kmuto@debian.org>
-Standards-Version: 2.1.2.2
+Standards-Version: 3.2.1.0
+Build-Depends: debmake, xlibs-dev
 
 Package: xjokes
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: X11 jokes
  xjokes contains 4 jokes. yasiti, blackhole, mori1, and mori2.
-
