@@ -1,0 +1,28 @@
+This package was debianized by Kenshi Muto kmuto@debian.org on
+Mon, 23 Aug 1999 10:57:40 +0900.
+
+It was downloaded from 
+   ftp://stardust.sfc.wide.ad.jp/pub/JG/sources/xjokes.tar.Z
+
+Copyright:
+
+This program inspirated by meltdown.
+
+This package contains four unique programs.
+Profile:
+
+	yasiti		: Blackhole or windmill.
+	blackhole	: This program has good reputation on my friends.
+	mori1		: I want everyone amaze.
+	mori2		: This is same as mori1, but bitmap is more large.
+
+I added roughly Makefile,so you can compile this and run.
+
+License:
+You can distribute and modify this without any permission.Enjoy this.
+
+Japan Tabako Co.,Ltd.
+Tsutomu Hurutani  E-mail: furuya@joyful1.jtim.snet.or.jp
+
+This file translated by Kenshi Muto <kmuto@debian.org>
+See also original file copyright.jp.

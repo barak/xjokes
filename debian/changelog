@@ -1,0 +1,35 @@
+xjokes (1.0-5) unstable; urgency=low
+
+  * Fixed source missing.
+
+ -- Kenshi Muto <kmuto@debian.org>  Mon, 30 Aug 1999 10:14:52 +0900
+
+xjokes (1.0-4) unstable; urgency=low
+
+  * Initial official release for Debian Project.
+
+ -- Kenshi Muto <kmuto@debian.org>  Mon, 23 Aug 1999 11:27:07 +0900
+
+xjokes (1.0-3) frozen-jp; urgency=low
+
+  * Fixed lintian check errors.
+  * Fixed Bug#JP/365.
+
+ -- Masahiro TANAKA <tanaka@debian.or.jp>  Thu, 11 Jun 1998 02:37:00 +0900
+
+xjokes (1.0-2) hamm-jp; urgency=low
+
+  * hamm Release.
+
+ -- Masahiro TANAKA <tanaka@debian.or.jp>  Sat,  8 Nov 1997 22:29:18 +0900
+
+xjokes (1.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Masahiro TANAKA <tanaka@debian.or.jp>  Tue, 14 Oct 1997 02:59:37 +0900
+
+Local variables:
+mode: debian-changelog
+add-log-mailing-address: "tanaka@debian.or.jp"
+End:

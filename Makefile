@@ -1,5 +1,5 @@
 CFLAGS = -O
-LDFLAGS = -lX11
+LDFLAGS = -L/usr/X11R6/lib -lX11
 CC = cc
 
 all: yasiti blackhole mori1 mori2
@@ -18,3 +18,5 @@ mori2: mori2.o
 	$(CC) $@.o -o $@ $(LDFLAGS)
 mori2.o: mori2.c
 
+clean:
+	-rm -f *.o *~ yasiti blackhole mori1 mori2
