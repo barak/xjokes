@@ -1,3 +1,10 @@
+xjokes (1.0-8) unstable; urgency=low
+
+  * xjokes binaries are moved /usr/games. They are not important,
+    but their file name will be conflict with more important package.
+
+ -- Kenshi Muto <kmuto@debian.org>  Wed, 11 Sep 2002 14:09:45 +0900
+
 xjokes (1.0-7) unstable; urgency=low
 
   * Really modified for Policy 3.2.1.0 (Oops, I must read it more carefully...)
