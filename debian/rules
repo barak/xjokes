@@ -32,13 +32,11 @@ binary-arch:	checkroot build
 	cd debian/tmp && install -d `cat ../dirs`
 	#make install DESTDIR=`pwd`/debian/tmp
 	cp -a yasiti blackhole mori1 mori2 `pwd`/debian/tmp/usr/games
-	ln -s ../man7/undocumented.7.gz \
+	ln -s blackhole.6.gz \
 		`pwd`/debian/tmp/usr/share/man/man6/yasiti.6.gz
-	ln -s ../man7/undocumented.7.gz \
-		`pwd`/debian/tmp/usr/share/man/man6/blackhole.6.gz
-	ln -s ../man7/undocumented.7.gz \
+	ln -s blackhole.6.gz \
 		`pwd`/debian/tmp/usr/share/man/man6/mori1.6.gz
-	ln -s ../man7/undocumented.7.gz \
+	ln -s blackhole.6.gz \
 		`pwd`/debian/tmp/usr/share/man/man6/mori2.6.gz
 # Must have debmake installed for this to work. Otherwise please copy
 # /usr/bin/debstd into the debian directory and change debstd to debian/debstd

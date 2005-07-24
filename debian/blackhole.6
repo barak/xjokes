@@ -1,0 +1,30 @@
+.\" Process this file with
+.\" groff -man -Tascii blackhole.6
+.\"
+.TH "blackhole" 6
+.SH NAME
+blackhole, mori1, mori2, yasiti \- draws funny things on an XDisplay
+.SH SYNOPSIS
+.B blackhole
+[-display <displayname>]
+.SH DESCRIPTION
+.TP
+.B blackhole
+produces an animated zoom-out effect on a display. The display will be restored afterwards. 
+.TP
+.B mori1
+tiles a display with the face of a girl winking at you. The display will be restored afterwards. 
+.TP
+.B mori2
+displays the face of a girl winking at you. The display will be restored afterwards.
+.TP
+.B yasiti
+displays a rotating black object at the center of the screen. The display will be restored afterwards.
+.SH OPTIONS
+.TP
+.B \-display displayname
+With this argument you can determine on which display the programs should draw. By default, the display specified by the DISPLAY environment variable is used. 
+.SH "SEE ALSO"
+.BR X (7)
+.SH AUTHOR
+This manual page was written by Timo Schneider <timo.schneider@s2004.tu-chemnitz.de>, for the Debian project (but may be used by others).

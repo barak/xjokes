@@ -2,11 +2,12 @@ Source: xjokes
 Section: x11
 Priority: optional
 Maintainer: Kenshi Muto <kmuto@debian.org>
-Standards-Version: 3.2.1.0
+Standards-Version: 3.6.2.1
 Build-Depends: debmake, xlibs-dev
 
 Package: xjokes
 Architecture: any
 Depends: ${shlibs:Depends}
-Description: X11 jokes
+Description: X11 jokes - short movies
  xjokes contains 4 jokes. yasiti, blackhole, mori1, and mori2.
+ These applications show short and weird animation on your desktop.
