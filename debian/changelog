@@ -1,8 +1,13 @@
+xjokes (1.0-10) unstable; urgency=low
+
+  * Remove /usr/doc link.
+  * Fix FTBFS of xlibs-dev transition (closes: #346931)
+
+ -- Kenshi Muto <kmuto@debian.org>  Mon, 15 Aug 2005 23:35:56 +0000
+
 xjokes (1.0-9) unstable; urgency=low
 
   * Apply manpage created by Timo. Thanks! (closes: #225819)
-  * Remove /usr/doc link.
-  * Improved description (closes: #210044)
 
  -- Kenshi Muto <kmuto@debian.org>  Sun, 24 Jul 2005 02:52:27 +0000
 
