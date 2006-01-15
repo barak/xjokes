@@ -1,12 +1,12 @@
 Source: xjokes
-Section: x11
+Section: games
 Priority: optional
 Maintainer: Kenshi Muto <kmuto@debian.org>
-Standards-Version: 3.6.2.1
-Build-Depends: debmake, libx11-dev
+Build-Depends: debhelper (>= 4.0.0), libx11-dev
+Standards-Version: 3.6.2
 
 Package: xjokes
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X11 jokes
- xjokes contains 4 jokes. yasiti, blackhole, mori1, and mori2.
+ xjokes contains 4 small funny program; yasiti, blackhole, mori1, and mori2.
