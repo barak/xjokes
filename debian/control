@@ -1,7 +1,7 @@
 Source: xjokes
 Section: games
 Priority: optional
-Maintainer: Kenshi Muto <kmuto@debian.org>
+Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends: debhelper (>= 4.0.0), libx11-dev
 Standards-Version: 3.6.2
 
