@@ -1,3 +1,11 @@
+xjokes (1.0-13) unstable; urgency=low
+
+  * Adopted
+  * Update packaging scripts
+  * Tweak sources into modernity
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 30 Jan 2012 14:11:40 +0000
+
 xjokes (1.0-12) unstable; urgency=low
 
   * Orphaned (#448111). Set maintainer to QA Group.
@@ -75,8 +83,3 @@ xjokes (1.0-1) unstable; urgency=low
   * Initial Release.
 
  -- Masahiro TANAKA <tanaka@debian.or.jp>  Tue, 14 Oct 1997 02:59:37 +0900
-
-Local variables:
-mode: debian-changelog
-add-log-mailing-address: "tanaka@debian.or.jp"
-End:
