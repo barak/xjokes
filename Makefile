@@ -1,22 +1,28 @@
-CFLAGS = -O
-LDFLAGS = -L/usr/X11R6/lib -lX11
-CC = cc
+CFLAGS += -O
+CPPFLAGS += -Wall
+LOADLIBES = -lX11
 
-all: yasiti blackhole mori1 mori2
+progs = yasiti blackhole mori1 mori2
 
-yasiti: yasiti.o
-	$(CC) $@.o -o $@ $(LDFLAGS)
+prefix = /usr/local
+exec_prefix = $(prefix)
+bindir = $(exec_prefix)/bin
+
+all: $(progs)
+
 yasiti.o: yasiti.c u1.xbm u2.xbm u3.xbm u4.xbm
-blackhole: blackhole.o
-	$(CC) $@.o -o $@ $(LDFLAGS)
-blackhole.o: blackhole.c
-mori1: mori1.o
-	$(CC) $@.o -o $@ $(LDFLAGS)
-mori1.o: mori1.c
 
-mori2: mori2.o
-	$(CC) $@.o -o $@ $(LDFLAGS)
-mori2.o: mori2.c
+INSTALL = install
+INSTALL_PROGRAM = $(INSTALL)
+
+install: all
+	mkdir -p $(DESTDIR)$(bindir)
+	$(INSTALL_PROGRAM) $(progs) $(DESTDIR)$(bindir)/
+
+uninstall:
+	-cd $(DESTDIR)$(bindir) && rm -f $(progs)
 
 clean:
-	-rm -f *.o *~ yasiti blackhole mori1 mori2
+	-rm -f $(progs) *.o
+
+.PHONY: all install uninstall clean
