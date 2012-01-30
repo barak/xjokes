@@ -1,12 +1,15 @@
 Source: xjokes
 Section: games
 Priority: optional
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper (>= 4.0.0), libx11-dev
-Standards-Version: 3.6.2
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Build-Depends: debhelper (>= 8), libx11-dev
+Standards-Version: 3.9.2
+Vcs-Git: git://git.debian.org/git/collab-maint/xjokes.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/xjokes.git
 
 Package: xjokes
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X11 jokes
- xjokes contains 4 small funny program; yasiti, blackhole, mori1, and mori2.
+ Four small funny programs to tweak an X11 display:
+ yasiti, blackhole, mori1, and mori2.
