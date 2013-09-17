@@ -2,10 +2,10 @@ Source: xjokes
 Section: games
 Priority: optional
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Build-Depends: debhelper (>= 8), libx11-dev
-Standards-Version: 3.9.2
-Vcs-Git: git://git.debian.org/git/collab-maint/xjokes.git
-Vcs-Browser: http://git.debian.org/?p=collab-maint/xjokes.git
+Build-Depends: debhelper (>= 9), libx11-dev
+Standards-Version: 3.9.4
+Vcs-Git: git://anonscm.debian.org/collab-maint/xjokes.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xjokes.git
 
 Package: xjokes
 Architecture: any
