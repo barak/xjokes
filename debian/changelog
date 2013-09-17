@@ -1,3 +1,11 @@
+xjokes (1.0-14) unstable; urgency=low
+
+  * dh9
+  * bump standards version, no changes required
+  * update collab-maint git repo url to naming scheme du jour
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 17 Sep 2013 12:28:32 +0100
+
 xjokes (1.0-13) unstable; urgency=low
 
   * Adopted
