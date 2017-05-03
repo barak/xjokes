@@ -1,4 +1,6 @@
 /files
 /*.debhelper.log
 /*.substvars
+/.debhelper/
+/debhelper-build-stamp
 /xjokes/
