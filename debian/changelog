@@ -1,3 +1,11 @@
+xjokes (1.0-16) unstable; urgency=medium
+
+  * dh11
+  * bump standards version
+  * swizzle packaging repo to salsa
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 08 Aug 2018 16:17:54 +0200
+
 xjokes (1.0-15) unstable; urgency=medium
 
   * dh10
