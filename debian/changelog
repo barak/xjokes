@@ -1,3 +1,9 @@
+xjokes (1.0-17) unstable; urgency=medium
+
+  * update packaging scripts
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 15 Jan 2021 18:12:24 -0000
+
 xjokes (1.0-16) unstable; urgency=medium
 
   * dh11
