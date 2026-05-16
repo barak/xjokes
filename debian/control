@@ -2,15 +2,13 @@ Source: xjokes
 Section: games
 Priority: optional
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Build-Depends: debhelper-compat (= 13), libx11-dev
-Standards-Version: 4.5.1
-Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 14), libx11-dev
+Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/debian/xjokes.git
 Vcs-Browser: https://salsa.debian.org/debian/xjokes
 
 Package: xjokes
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X11 jokes
  Four small funny programs to tweak an X11 display:
  yasiti, blackhole, mori1, and mori2.
