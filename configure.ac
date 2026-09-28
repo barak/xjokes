@@ -1,4 +1,4 @@
-AC_INIT([xjokes], [1.0])
+AC_INIT([xjokes], [1.1])
 AM_INIT_AUTOMAKE([foreign])
 AC_PROG_CC
 PKG_CHECK_MODULES([X11], [x11])
