@@ -1,0 +1,7 @@
+AC_INIT([xjokes], [1.1])
+AM_INIT_AUTOMAKE([foreign])
+AC_PROG_CC
+PKG_CHECK_MODULES([X11], [x11])
+AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT

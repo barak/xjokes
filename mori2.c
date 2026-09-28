@@ -1,3 +1,5 @@
+#include	<config.h>
+
 #include	<X11/Xlib.h>
 #include	<stdio.h>
 #include	<stdlib.h>
@@ -6,7 +8,7 @@
 #include	"mori.xbm"
 #include	"mori2.xbm"
 
-inline int
+static inline int
 isqr (int a)
 {
   return a * a;
@@ -16,14 +18,14 @@ Display *dpy;
 Window win;
 int screen;
 
-void
+static void
 usage (char *filename)
 {
   fprintf (stderr, "Usage: %s [-display <displayname>]\n", filename);
   exit (1);
 }
 
-extern void do_all ();
+static void do_all (void);
 
 int
 main (int argc, char **argv)
@@ -77,7 +79,7 @@ typedef struct
   int x, y, m;
   int d;
 } mask_type;
-int
+static int
 comp (const void *ii, const void *jj)
 {
   const mask_type *i = ii;
@@ -85,7 +87,7 @@ comp (const void *ii, const void *jj)
   return i->d - j->d;
 }
 
-int
+static int
 bit (char *s, mask_type ** mask)
 {
   int num, x, y;
@@ -120,8 +122,8 @@ bit (char *s, mask_type ** mask)
   return num;
 }
 
-void
-do_all ()
+static void
+do_all (void)
 {
   int height, width;
   mask_type *mask, *m, *maskt, *mask2;

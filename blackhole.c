@@ -1,3 +1,5 @@
+#include	<config.h>
+
 #include	<X11/Xlib.h>
 #include	<stdio.h>
 #include	<stdlib.h>
@@ -10,14 +12,14 @@ Window win;
 GC copygc, fillgc;
 int screen;
 
-void
+static void
 usage (char *filename)
 {
   fprintf (stderr, "Usage: %s [-display <displayname>]\n", filename);
   exit (1);
 }
 
-extern void do_all ();
+static void do_all (void);
 
 int
 main (int argc, char **argv)
@@ -82,7 +84,7 @@ typedef struct
   int x, y;
   int d;
 } mask_type;
-int
+static int
 comp (const void *ii, const void *jj)
 {
   const mask_type *i = ii;
@@ -92,13 +94,13 @@ comp (const void *ii, const void *jj)
 
 mask_type *mask;
 
-inline int
+static inline int
 isqr (int a)
 {
   return a * a;
 }
 
-void
+static void
 mov (int fw, int tw, int width, int height)
 {
   int w, h;
@@ -134,8 +136,8 @@ mov (int fw, int tw, int width, int height)
 
 }
 
-void
-do_all ()
+static void
+do_all (void)
 {
   int height, width;
   int w;
