@@ -1,8 +1,9 @@
-xjokes (1.0-18) UNRELEASED; urgency=medium
+xjokes (1.1-1) unstable; urgency=medium
 
   * update packaging scripts: standards 4.7.4, dh14, add uscan watch file
+  * new upstream release
 
- -- Barak A. Pearlmutter <bap@debian.org>  Mon, 28 Sep 2026 10:12:15 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 28 Sep 2026 10:16:09 +0100
 
 xjokes (1.0-17) unstable; urgency=medium
 
