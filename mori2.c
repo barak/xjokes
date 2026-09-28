@@ -6,7 +6,7 @@
 #include	"mori.xbm"
 #include	"mori2.xbm"
 
-inline int
+static inline int
 isqr (int a)
 {
   return a * a;
