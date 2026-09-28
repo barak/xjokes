@@ -13,14 +13,14 @@ Display *dpy;
 Window win;
 int screen;
 
-void
+static void
 usage (char *filename)
 {
   fprintf (stderr, "Usage: %s [-display <displayname>]\n", filename);
   exit (1);
 }
 
-extern void do_all ();
+static void do_all (void);
 
 int
 main (int argc, char **argv)
@@ -67,8 +67,8 @@ main (int argc, char **argv)
   exit (0);
 }
 
-void
-do_all ()
+static void
+do_all (void)
 {
   int height, width;
   int dir, w, h, ox, oy;

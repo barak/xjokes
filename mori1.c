@@ -10,14 +10,14 @@ Display *dpy;
 Window win;
 int screen;
 
-void
+static void
 usage (char *filename)
 {
   fprintf (stderr, "Usage: %s [-display <displayname>]\n", filename);
   exit (1);
 }
 
-extern void do_all ();
+static void do_all (void);
 
 int
 main (int argc, char **argv)
@@ -69,21 +69,21 @@ typedef struct
   int x, y;
   int d;
 } mask_type;
-int
-comp (i, j)
-     mask_type *i, *j;
+static int
+comp (const void *a, const void *b)
 {
+  const mask_type *i = a, *j = b;
   return i->d - j->d;
 }
 
-inline int
+static inline int
 isqr (int a)
 {
   return a * a;
 }
 
-void
-do_all ()
+static void
+do_all (void)
 {
   int height, width;
   int xn, yn, i;

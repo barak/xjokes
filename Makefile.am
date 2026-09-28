@@ -1,6 +1,6 @@
 bin_PROGRAMS = yasiti blackhole mori1 mori2
 
-AM_CFLAGS = -Wall $(X11_CFLAGS)
+AM_CFLAGS = -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes $(X11_CFLAGS)
 LDADD = $(X11_LIBS)
 
 yasiti_SOURCES = yasiti.c u1.xbm u2.xbm u3.xbm u4.xbm
